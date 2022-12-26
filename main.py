@@ -10,3 +10,8 @@ def create(inp):
     return word
 
 
+ret_word = create(into)
+plt.figure()
+plt.imshow(ret_word, interpolation="bilinear")
+plt.axis("off")
+plt.show()
