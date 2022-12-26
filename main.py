@@ -1,3 +1,3 @@
-import wordcloud
+from wordcloud import WordCloud
 
-def
+def create(input):
