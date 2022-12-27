@@ -21,4 +21,4 @@ def image(ret_word):
 
 # call function to generate cloud for sentence from the user.
 re_word = create(into)
-image = image(re_word)
+image(re_word)
