@@ -12,9 +12,13 @@ def create(inp):
     return word
 
 
+def image(ret_word):
+    plt.figure()    # creates figure for matplotlib to display.
+    plt.imshow(ret_word, interpolation="bilinear")
+    plt.axis("off")
+    plt.show()
+
+
 # call function to generate cloud for sentence from the user.
-ret_word = create(into)
-plt.figure()    # creates figure for matplotlib to display.
-plt.imshow(ret_word, interpolation="bilinear")
-plt.axis("off")
-plt.show()
+re_word = create(into)
+image = image(re_word)
