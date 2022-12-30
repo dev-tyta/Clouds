@@ -1,4 +1,5 @@
 import gradio as gr
+from main import create, image
 
 
 def greet(name):
@@ -6,6 +7,9 @@ def greet(name):
 
 
 def inpt(text):
+    created_cloud = create(text)
+    image()
+
 
 demo = gr.Interface(fn=greet, inputs="text", outputs="text")
 
