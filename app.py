@@ -8,9 +8,9 @@ def greet(name):
 
 def inpt(text):
     created_cloud = create(text)
-    image()
+    image(created_cloud)
 
 
-demo = gr.Interface(fn=greet, inputs="text", outputs="text")
+demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
 
 demo.launch()
