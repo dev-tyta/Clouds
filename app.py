@@ -8,9 +8,10 @@ def greet(name):
 
 def inpt(text):
     created_cloud = create(text)
-    image(created_cloud)
+    gr.ImageMask(image_mode= created_cloud)
+    # image(created_cloud)
 
 
 demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
 
-demo.launch()
+demo.launch(share=True)
