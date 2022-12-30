@@ -3,7 +3,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 # receives input from user
-into = input("Put in a sentence: ")
+# into = input("Put in a sentence: ")
 
 
 # function to generate cloud for the sentence
