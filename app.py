@@ -11,6 +11,7 @@ def inpt(text):
     gr.ImageMask(image_mode=created_cloud)
     # image(created_cloud)
 
+
 btn = gr.Button("Generate image").style(full_width=False)
 
 gallery = gr.Gallery(label="Generated images", show_label=False, elem_id="gallery"
@@ -18,6 +19,6 @@ gallery = gr.Gallery(label="Generated images", show_label=False, elem_id="galler
 
 btn.click(inpt, None, gallery)
 
-# demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
+demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
 
 demo.launch()
