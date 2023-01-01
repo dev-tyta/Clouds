@@ -8,10 +8,16 @@ def greet(name):
 
 def inpt(text):
     created_cloud = create(text)
-    gr.ImageMask(image_mode= created_cloud)
+    gr.ImageMask(image_mode=created_cloud)
     # image(created_cloud)
 
+btn = gr.Button("Generate image").style(full_width=False)
 
-demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
+gallery = gr.Gallery(label="Generated images", show_label=False, elem_id="gallery"
+        ).style(grid=[2], height="auto")
 
-demo.launch(share=True)
+btn.click(inpt, None, gallery)
+
+# demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
+
+demo.launch()
