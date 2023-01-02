@@ -16,4 +16,5 @@ def inpt(text):
 
 demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
 
-demo.launch()
+if __name__ == "__main__":
+    demo.launch(debug=True)
