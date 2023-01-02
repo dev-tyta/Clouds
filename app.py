@@ -10,7 +10,7 @@ def greet(name):
 def inpt(text):
     created_cloud = normal(text)
     plt.figure()
-    show_cloud = plt.imshow(created_cloud,interpolation="bilinear")
+    show_cloud = plt.imshow(created_cloud, interpolation="bilinear")
     gr.Image(value=show_cloud)
 
 
