@@ -9,9 +9,6 @@ def greet(name):
 
 def inpt(text):
     created_cloud = normal(text)
-    plt.figure()
-    show_cloud = plt.imshow(created_cloud, interpolation="bilinear")
-    gr.Image(value=show_cloud)
 
 
 demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
