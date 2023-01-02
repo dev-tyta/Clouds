@@ -1,5 +1,5 @@
 import gradio as gr
-from main import create, image
+from main import normal, image
 
 
 def greet(name):
@@ -7,7 +7,7 @@ def greet(name):
 
 
 def inpt(text):
-    created_cloud = create(text)
+    created_cloud = normal(text)
     gr.Image(value=created_cloud)
 
 
