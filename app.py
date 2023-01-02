@@ -1,5 +1,6 @@
 import gradio as gr
-from main import normal, image
+from main import normal
+import matplotlib.pyplot as plt
 
 
 def greet(name):
@@ -8,7 +9,9 @@ def greet(name):
 
 def inpt(text):
     created_cloud = normal(text)
-    gr.Image(value=created_cloud)
+    plt.figure()
+    show_cloud = plt.imshow(created_cloud,interpolation="bilinear")
+    gr.Image(value=show_cloud)
 
 
 demo = gr.Interface(fn=inpt, inputs="text", outputs="image")
