@@ -2,16 +2,14 @@
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-# receives input from user
-# into = input("Put in a sentence: ")
-
 
 # function to generate cloud for the sentence
-def create(inp):
+def normal(inp):
     word = WordCloud().generate(inp)
     return word
 
 
+# function to carry out test without using gradio.
 def image(ret_word):
     plt.figure()    # creates figure for matplotlib to display.
     plt.imshow(ret_word, interpolation="bilinear")
