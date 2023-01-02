@@ -17,6 +17,6 @@ def image(ret_word):
     plt.show()
 
 
-# # call function to generate cloud for sentence from the user.
+# call function to generate cloud for sentence from the user.
 # re_word = create(into)
 # image(re_word)
